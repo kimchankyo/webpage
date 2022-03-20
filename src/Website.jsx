@@ -1,7 +1,9 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
-import App from "./App";
+import { HashRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/home/Home";
+import Header from "./components/header/Header";
+
 
 class Website extends React.Component {
   constructor(props) {
@@ -11,9 +13,13 @@ class Website extends React.Component {
 
   render() {
     return (
-      <div>
-        Website
-        <Link to="/s">Click This To Change</Link>
+      <div className="webpage">
+        <HashRouter>
+          <Header/>
+          <Routes>
+            <Route path="/" element={<Home/>} />
+          </Routes>
+        </HashRouter>
       </div>
     );
   }

@@ -13,7 +13,7 @@ class Website extends React.Component {
     return (
       <div>
         Website
-        <Link to="/webpage/s">Click This To Change</Link>
+        <Link to="/s">Click This To Change</Link>
       </div>
     );
   }

@@ -3,6 +3,7 @@ import React from "react";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/home/Home";
 import Header from "./components/header/Header";
+import Research from "./components/research/Research";
 
 
 class Website extends React.Component {
@@ -18,6 +19,7 @@ class Website extends React.Component {
           <Header/>
           <Routes>
             <Route path="/" element={<Home/>} />
+            <Route path="/research" element={<Research/>} />
           </Routes>
         </HashRouter>
       </div>

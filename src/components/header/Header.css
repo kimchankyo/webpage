@@ -18,14 +18,16 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  overflow: none;
   color: lime;
   font-size: 28px;
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: Menlo;
+  white-space: nowrap;
 }
 
 .site-header-terminal-cursor {
   width: 25px;
-  height: 45px;
+  height: 40px;
   background-color: lime;
   margin-left: 5px;
 }
@@ -35,19 +37,30 @@
   flex-direction: row;
   justify-content: center;
   width: 80%;
+  margin-bottom: 20px;
 }
 
 .site-toolbar-button {
-  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  width: 10vw;
+  height: 30px;
+  text-decoration: none;
   color: lime;
   background-color: rgb(30, 30, 30);
   cursor: pointer;
   border: none;
   border-left: 4px solid lime;
-  border-right: 4px solid lime;
   font-size: 16px;
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;;
+  font-family: Menlo;
   padding: 10px;
+}
+
+#site-toolbar-last-button {
+  border-right: 4px solid lime;
 }
 
 .site-toolbar-button:hover {

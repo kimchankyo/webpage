@@ -7,6 +7,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(30, 30, 30);
   color: white;
+  overflow: scroll;
+  overflow-x: hidden;
+  margin-left: 15px;
+}
+
+body::-webkit-scrollbar {
+  /* Random Variable To Remove Pre-Set Options (Look Into Later) */
+  color: white; 
+}
+
+body::-webkit-scrollbar-track {
+  background-color: rgb(30, 30, 30);
 }
 
 code {

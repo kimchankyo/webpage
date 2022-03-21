@@ -1,4 +1,46 @@
 .home-page {
-  /* background-color: rgb(30, 30, 30); */
-  height: 100vh;
+  background-color: rgb(30, 30, 30);
+}
+
+.home-photo-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.home-photo-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-photo {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: 100% 10%;
+  border-radius: 20px;
+}
+
+.home-contact-container {
+  width: 400px;
+  height: calc(300px - 2*padding);
+  background-color: black;
+  margin-left: 30px;
+  padding: 20px;
+  border-radius: 20px;
+  font-family: Menlo;
+}
+
+.home-contact {
+  margin-left: 19px;
+}
+
+.home-contact-entry {
+  padding-top: 10px;
+}
+
+.home-contact-link {
+  text-decoration: none;
+  color: white;
 }

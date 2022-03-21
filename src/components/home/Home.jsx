@@ -5,7 +5,7 @@ class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      profilePictureURL: "webpage/assets/images/profile_picture.png",
+      profilePictureURL: "%PUBLIC_URL%/assets/images/profile_picture.png",
       contactEmail: "chankyo@stanford.edu",
       contactGitHub: "github.com/kimchankyo",
       githubURL: "https://github.com/kimchankyo",
